@@ -34,7 +34,7 @@
     "functions": [],
     "variables": {},
     "resources": [
-         {
+        {
             "type": "Microsoft.Network/publicIPAddresses",
             "apiVersion": "2022-07-01",
             "name": "[parameters('publicIPAddresses_VM1_ip_name')]",
@@ -93,7 +93,8 @@
                         "createOption": "FromImage",
                         "caching": "ReadWrite",
                         "managedDisk": {
-                            "storageAccountType": "Standard_LRS"                        },
+                            "storageAccountType": "Standard_LRS"
+                        },
                         "deleteOption": "Detach",
                         "diskSizeGB": 30
                     },
@@ -296,9 +297,7 @@
             "apiVersion": "2022-07-01",
             "name": "[parameters('virtualNetworks_app_vnet_name')]",
             "location": "eastus",
-            "dependsOn": [
-
-            ],
+            "dependsOn": [],
             "properties": {
                 "addressSpace": {
                     "addressPrefixes": [
